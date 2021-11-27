@@ -1,0 +1,59 @@
+legend{
+    padding:5px;
+    background-color: steelblue;
+    border-radius: 10px;
+    color: snow;
+}
+
+fieldset#contactForm{
+    min-height: 100px;
+    border-radius: 10px;
+}
+
+fieldset{
+    margin-bottom: 10px;
+    flex:1 1 100%;
+}
+
+form {
+    display: flex;
+    flex-flow: wrap;
+    margin: 10px 0 0 0;
+}
+
+fieldset > div > *{
+    flex: 1 1 49%;
+    margin: 5px;
+}
+
+fieldset > div{
+    display: flex;
+    flex-flow: wrap;
+    margin: 5px;
+    width: 100%;
+}
+
+textarea{
+    margin: 2px;
+    width: 100%;
+    height: 100px;
+}
+
+div#button{
+    width: 100%;
+    text-align: center;
+}
+
+div > input[type="submit"], input[type="reset"]{
+    width: 45%;
+    padding:2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: steelblue;
+    border-radius: 5px;
+    color: snow;
+}
+
+#formalign{
+    width: 100%;
+}

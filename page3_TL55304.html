@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <meta name="author" content="Tommy Lam">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Winnie's Home Page</title>
+        <link rel="stylesheet" href="css/navigation_TLa55304.css">
+        <link rel="stylesheet" href="css/styles_TLa55304.css">
+        <link rel="stylesheet" href="css/page3style_TLa55304.css">
+        <script src="script/page3form_TL55304.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <h1><strong>Winnie's Home Page</strong></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Winnie</a></li>
+                <li><a href="page2_TLa55304.html">Share</a></li>
+                <li><a href="page3_TL55304.html">Contact me</a></li>
+            </ul>
+        </nav>
+        <article>
+            <div id="formalign">
+            <form action="page3_TL55304.html" method="GET"
+                enctype="application/x-www-form-urlencoded">
+            <fieldset id="contactForm">
+                <legend>
+                    Contact form
+                </legend>
+                <div class="informationForm">
+                    <labe for="username">Name:</labe>
+                    <input type="text" name="username" id="username" placeholder="Please enter your name" required>
+                    <br>
+
+                    <labe for="Email"> Email address:</labe>
+                    <input type="email" name="Email" id="Email" placeholder="Please enter your email" required>
+                    <br>
+
+                    <label for="Violation">Is this your first time reaching out?</label>
+                    <span>
+                        <input type="radio" name="YN" id="YN1" value="Yes" required> Yes
+                        <input type="radio" name="YN" id="YN1" value="No" required > No
+                    </span>
+                    <br>
+
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Your dog is so cute!!" required></textarea>
+                    <br>
+                </div>
+            </fieldset>
+                <div id="button"> 
+                    <input type="submit" name="submit" value="Submit Data" 
+                        onclick="runValidate(this.form);">
+                    <input type="reset" name="clear" value="Clear Input">
+                </div>
+            </form>
+            </div>
+        </article>
+        <footer>
+            <small> CopyRight &copy; Tommy Lam 2021 </small>
+        </footer>
+    </body>
+</html>

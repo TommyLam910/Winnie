@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uft-8">
+        <meta name="author" content="Tommy Lam">
+        <title> Winnie's Home Page</title>
+        <link rel="stylesheet" href="css/navigation_TLa55304.css">
+        <link rel="stylesheet" href="css/styles_TLa55304.css">
+        <link rel="stylesheet" href="css/page2formstyle_TLa55304.css">
+        <link rel="stylesheet" href="css/grid_TLa55304.css">
+        <script src="script/page2form_TL55304.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <h1><strong>Winnie's Home Page</strong></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Winnie</a></li>
+                <li><a href="page2_TLa55304.html">Share</a></li>
+                <li><a href="page3_TL55304.html">Contact me</a></li>
+            </ul>
+        </nav>
+        <article>
+            <form action="Lab07_TLa55304.html" method="get" 
+            enctype="application/x-www-form-urlencoded">
+                <fieldset id="mediaInput">
+                    <legend>Input the card infomration</legend>
+                    <div class="Input">
+                        <label for="selectImage">Select Image</label>
+                        <select name="selectImage" id="selectImage" size="1" onchange="changeImage(this.value)">
+                            <option value="images/noimage.jpg" selected>Select Image</option>
+                            <option value="images/Winnie_01.jpg">Winnie 1 month old</option>
+                            <option value="images/Winnie_02.jpg">Winnie 2 months old</option>
+                            <option value="images/Winnie_03.jpg">Winnie 3 months old</option>
+                            <option value="images/Winnie_04.jpg">Winnie 4 months old</option>
+                            <option value="images/Winnie_05.jpg">Winnie 5 months old</option>
+                            <option value="images/Winnie_06.jpg">Winnie 6 months old</option>
+                            <option value="images/Winnie_07.jpg">Winnie 7 months old</option>
+                            <option value="images/Winnie_08.jpg">Winnie 8 months old</option>
+                            <option value="images/Winnie_09.jpg">Winnie 9 months old</option>
+                            <option value="images/Winnie_10.jpg">Winnie 10 months old</option>
+                            <option value="images/Winnie_11.jpg">Winnie 11 months old</option>
+                        </select>
+                        
+                        <div class="border"> 
+                        <h3>Pick your own card style</h3>
+                        <p>
+                            <label for="backgroundColor">Background color:</label>
+                        <span>
+                            <input type="radio" name="color" value="blanchedalmond">Almond
+                            <input type="radio" name="color" value="Pink">Pink
+                            <input type="radio" name="color" value="#E6E6FA">Lavender
+                            <input type="radio" name="color" value="#ffff77 ">Laser Lemon
+                            <input type="radio" name="color" value="#00bbff">Capri
+                        </span>
+                        </p>
+                        <p>
+                            <label for="fontFamily">Font family:</label>
+                        <span>
+                            <input type="radio" name="font" value="Ink Free">Ink Free
+                            <input type="radio" name="font" value="Rockwell">Rockwell
+                            <input type="radio" name="font" value="Segoe Script">S. Script
+                            <input type="radio" name="font" value="Monospace">Monospace
+                        </span>
+                        </p>
+                        
+                        <p>
+                            <label for="imageStyle">Image Style:</label>
+                        <span>
+                            <input type="checkbox" name="style" value="border-radius: 30px">Border Radius
+                            <input type="checkbox" name="style" value="box-shadow: 4px 4px 4px black">Box shadow
+                            <input type="checkbox" name="style" value="filter: sepia(60%)">Sepia Filter
+                        </span>
+                        </p>
+                    </div>
+                            <label for="cardGreeting">To:</label>
+                            <input type="text" id="greeting" name="greeting">
+                            <br>
+                        
+                            <label for="imageTag">Image tag:</label>
+                        <span>
+                            <input type="checkbox" name="tag" id="tag" value="BichonFrise">Bichon Frise
+                            <input type="checkbox" name="tag" id="tag" value="Bichon">Bichon
+                            <input type="checkbox" name="tag" id="tag" value="Cute">Cute
+                            <input type="checkbox" name="tag" id="tag" value="Puppy">Puppy
+                            <input type="checkbox" name="tag" id="tag" value="Dog">Dog
+                        </span>
+                            <br>
+                        
+                            <label for="cardMessage">Card Message</label>
+                            <textarea id="cardMessage" name="cardMessage" row="4" cols="50"></textarea>
+                            <br>
+
+                            <label for="userEmail">From:</label>
+                            <input type="email" name="userEmail" id="userEmail">
+                            <br>
+
+                            <label for="todaysdate">Date:</label>
+                            <input type="text" name="todaysdate" id="todaysdate">
+                            <br>
+
+                            <input type="button" name="submit" value="Preview the card" onclick="generate(this.form)">
+                            <input type="reset" name="clear" value="Clear entry">
+                    </div>
+                </fieldset>
+
+                <fieldset id ="cardPreview">
+                    <legend>Card Preview</legend>
+                    <div id="cardFont">
+                        <p id="previewGreeting">To</p>
+
+                        <p id="previewMessage">Card Message:</p>
+                        <img src="images/noimage.jpg" id="image">
+
+                        <p id="imageContent">Image tag</p>
+
+                        <p id="enterFrom">From</p>
+
+                        <p id="enterDate">Date</p>
+                    </div>
+                </fieldset>
+            </form> 
+        </article>
+
+        <footer>
+            <small> CopyRight &copy; Tommy Lam 2021 </small>
+        </footer>
+    </body>
+</html>

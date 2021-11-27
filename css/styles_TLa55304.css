@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box; 
+}
+
+html{
+    width: 100%;
+    margin: 0px;
+}
+
+header{
+    width:100%;
+    background-image: url('../images/background.jpg');
+    border-radius: 10px;
+    height: 300px;
+    background-size: 100% 100%;
+    line-height: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+article{
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* used for the index.html picture Automatic carousel */
+
+#container{
+    position: absolute;
+    width:300px;
+    height:300px;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+#photo{
+    width:1200px;
+    animation: switch 8s ease-out infinite;
+}
+
+#photo > img{
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+
+@keyframes switch{
+    0%, 20%{
+        margin-left: 0;
+    }
+    25%, 49%{
+        margin-left: -300px;
+    }
+    55%, 79%{
+        margin-left: -600px;
+    }
+    85%, 100%{
+        margin-left: -900px;
+    }
+}
+
+/*end of Automatic carousel */
+
+body{
+    background-color: ivory;
+    min-height: 1000px;
+    min-width: 1250px;
+}
+
+footer{
+    width: 100%;
+    text-align: right;
+    display: inline-block;
+    float: none;
+}
+
+h3{
+    text-align: center;
+}
+
+div#video{
+    position:absolute;
+    width:300px;
+    height:300px;
+    top: 0;
+    right: 0;
+}
+
+
+video#WinnieVsGamster{
+    width:300px;
+    height:300px;
+}
+
+
